@@ -6,7 +6,6 @@ class DocsController < ApplicationController
   layout false
 
   def index
-    pp "222222222"
   end
 
   private
