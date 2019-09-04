@@ -1,0 +1,75 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at https://guides.rubyonrails.org/i18n.html.
+
+zh-CN:
+  hello: "Hello world"
+  activerecord:
+    models:
+      user: "用户"
+      patient_info: "患者信息"
+      director_info: "督导员信息"
+      district: "行政区划"
+    attributes:
+      user:
+        phone_number: "电话号码"
+        email: "邮箱"
+        password: "密码"
+        password_confirmation: "确认密码"
+    errors:
+      template:
+        header:
+          one:    "由于发生了一个错误 %{model} 无法保存"
+          other:  "%{count} 个错误使得 %{model} 无法保存"
+        body: "请确认以下各项。"
+      messages:
+        inclusion: "不包含于列表中"
+        exclusion: "是保留关键字"
+        invalid: "是无效的"
+        confirmation: "与确认值不匹配"
+        accepted: "必须是可被接受的"
+        click_blank: "不能为空"
+        select_blank: "不能为空"
+        required: '不能为空'
+        empty: "不能留空"
+        blank: "不能为空"
+        too_long: "过长（最长为 %{count} 个字符）"
+        too_short: "过短（最短为 %{count} 个字符）"
+        wrong_length: "长度非法（必须为 %{count} 个字符）"
+        taken: "已经被使用"
+        not_a_number: "不是数字"
+        not_a_date: "不是合法日期"
+        not_number_or_char: "不是数字或者字母"
+        greater_than: "必须大于 %{count}"
+        greater_than_or_equal_to: "必须大于或等于 %{count}"
+        equal_to: "必须等于 %{count}"
+        less_than: "必须小于 %{count}"
+        less_than_or_equal_to: "必须小于或等于 %{count}"
+        record_invalid: "校验失败: %{errors}"

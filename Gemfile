@@ -24,6 +24,14 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'devise', '~> 4.7'
+gem 'rolify', '~> 5.2'
+
+gem 'kaminari', '~> 1.1', '>= 1.1.1'
+
+gem 'doorkeeper', '~> 5.1'
+
+gem 'grape', '~> 1.2', '>= 1.2.4'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 

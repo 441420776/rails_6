@@ -1,4 +1,4 @@
-class DocsController < ApplicationController
+class DocsController < ActionController::Base
   USER_NAME, PASSWORD = 'doc', '123456'
 
   before_action :basic_authenticate
