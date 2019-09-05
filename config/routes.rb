@@ -7,6 +7,8 @@ Rails.application.routes.draw do
       registrations: 'users/registrations',
       passwords: 'users/passwords'
   }
+  mount Test::BaseApi => '/'
+  mount Tb::BaseApi => '/'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root 'homes#index'
   get '/docs/index', to: 'docs#index'
