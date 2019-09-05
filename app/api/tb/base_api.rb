@@ -7,6 +7,7 @@ module Tb
     format :json
 
     mount V1::GrapeApi
+    mount V2::GrapeApi
 
   end
 end
