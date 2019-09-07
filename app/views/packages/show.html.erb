@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @package.name %>
+</p>
+
+<p>
+  <strong>Version:</strong>
+  <%= @package.version %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @package.code %>
+</p>
+
+<p>
+  <strong>File:</strong>
+  <% pp @package.file.methods %>
+  <%= @package.file.attachment.blob.filename.to_s %>
+
+  <%= link_to '下载', download_packages_path(id: @package.id) %>
+</p>
+
+<%= link_to 'Edit', edit_package_path(@package) %> |
+<%= link_to 'Back', packages_path %>

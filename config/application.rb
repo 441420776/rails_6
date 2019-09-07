@@ -36,5 +36,9 @@ module Rails6Test
     # the framework and any gems in your application.
     config.time_zone = 'Beijing'
     config.i18n.default_locale = 'zh-CN'
+    # 错误字段不额外添加html
+    ActionView::Base.field_error_proc = Proc.new do |html_tag, _instance_tag|
+      html_tag
+    end
   end
 end

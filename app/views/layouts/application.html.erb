@@ -4,8 +4,16 @@
     <title>Rails6Test</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <!--    使用assert中的样式-->
+    <%#= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%# if ['packages'].include?(params[:controller]) %>
+      <%#= stylesheet_link_tag "#{params[:controller]}", media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%# end %>
 
-    <%#= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <!-- 使用webpack样式-->
+    <% if ['packages'].include?(params[:controller]) %>
+      <%= javascript_pack_tag  params[:controller], 'data-turbolinks-track': 'reload' %>
+    <% end %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 

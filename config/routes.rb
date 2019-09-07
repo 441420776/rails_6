@@ -14,4 +14,8 @@ Rails.application.routes.draw do
   get '/docs/index', to: 'docs#index'
   resources :homes
 
+  resources :packages do
+    get :download, on: :collection
+  end
+
 end

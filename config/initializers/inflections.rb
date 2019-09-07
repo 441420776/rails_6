@@ -15,5 +15,6 @@
 #   inflect.acronym 'RESTful'
 # end
 ActiveSupport::Inflector.inflections(:en) do |inflect|
-  inflect.acronym 'API'
+  inflect.acronym 'Test::BaseApi'
+  inflect.acronym 'Tb::BaseApi'
 end
