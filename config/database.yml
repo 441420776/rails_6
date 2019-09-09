@@ -8,6 +8,7 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
   adapter: mysql2
+  encoding: utf8
   username: <%= Rails.application.credentials[Rails.env.to_sym][:mysql][:username] %>
   password: <%= Rails.application.credentials[Rails.env.to_sym][:mysql][:password] %>
   host: <%= Rails.application.credentials[Rails.env.to_sym][:mysql][:host] %>
@@ -25,3 +26,4 @@ test:
 
 production:
   <<: *default
+  socket: /var/run/mysqld/mysqld.sock
