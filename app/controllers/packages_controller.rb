@@ -62,10 +62,10 @@ class PackagesController < ApplicationController
   end
 
   def download
-    dir = "#{Rails.root}/tmp/download/"
+    dir = "#{Rails.root}/public/tmp/"
     FileUtils.mkdir_p dir unless File.exists?(dir)
 
-    file_path = "#{Rails.root}/tmp/download/#{@package.file.filename}"
+    file_path = "#{Rails.root}/public/tmp/#{@package.file.filename}"
     File.open(file_path, 'wb') do |file|
       file.write(@package.file.download)
     end
