@@ -43,6 +43,9 @@ zh-CN:
         email: "邮箱"
         password: "密码"
         password_confirmation: "确认密码"
+      post:
+        title: "标题"
+        publish_date: "发布日期"
     errors:
       template:
         header:

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :posts
   use_doorkeeper  do
       controllers applications: 'oauth/applications'
   end
