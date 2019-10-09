@@ -12,6 +12,22 @@ document.addEventListener('turbolinks:load', ()=>{
     $('[data-toggle="popover"]').popover()
 })
 
+import flatpickr from "flatpickr";
+import 'flatpickr/dist/l10n/zh'
+// 只使用flatpickr的CSS样式
+// require("flatpickr/dist/flatpickr.css")
+// 或者使用不同的样式主题
+require("flatpickr/dist/themes/dark.css")
+
+document.addEventListener("turbolinks:load", () => {
+    flatpickr("[data-behavior='flatpickr']", {
+        // altInput: true,
+        locale: "zh",
+        altFormat: "Y-m-d",
+        dateFormat: "Y-m-d"
+    })
+})
+
 
 require("@rails/ujs").start()
 require("turbolinks").start()
