@@ -27,7 +27,7 @@ gem 'turbolinks', '~> 5'
 gem 'devise', '~> 4.7'
 gem 'rolify', '~> 5.2'
 
-gem 'kaminari', '~> 1.1', '>= 1.1.1'
+gem 'kaminari', '~> 1.2'
 
 gem 'doorkeeper', '~> 5.1'
 
